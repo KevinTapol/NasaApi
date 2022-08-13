@@ -31,7 +31,8 @@ a {
 }
 
 button{
-    background-color: #0079b9;
+    /* background-color: #0079b9; */
+    background-color: #0a143c;
     font-weight: 800;
     padding: 8px 20px;
     border-radius: 4px;
