@@ -30,16 +30,14 @@ a {
     color: #fff;
 }
 
-button{
-    /* background-color: #0079b9; */
-    background-color: #0a143c;
+.btn {    
     font-weight: 800;
-    padding: 8px 20px;
+    /* padding: 8px 20px;
     border-radius: 4px;
     max-width: 20%;
-    color: white;
+    color: red;
     font-size: calc(1em + .25vw);
-    overflow:auto;
+    overflow:auto; */
 }
 body{
     background-color: #0a143c;

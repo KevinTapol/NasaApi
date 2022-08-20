@@ -1,6 +1,5 @@
 document.querySelector('button').addEventListener('click', getFetch)
-//maybe add a function to refresh page to deal with toggle hidden issue or disable submit button at the end of the getFetch funcion and reenable when calender icon clicked
-// require('dotenv').config()
+require('dotenv').config()
 // const api_keys = process.env.API_KEY
 
 function getFetch(){
@@ -8,7 +7,11 @@ function getFetch(){
   
   console.log(choice)
 
-  const url = `https://api.nasa.gov/planetary/apod?api_key=cQefIAyvLIcimT6OaQlIu5MenjqoJsCzFPfJA8AS&date=${choice}`
+  const API_KEY = 'cQefIAyvLIcimT6OaQlIu5MenjqoJsCzFPfJA8AS'
+  // let key = process.env.API_KEY
+  
+
+  const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${choice}`
 
   // I used promises instead of async because at the time I didn't know async
   fetch(url)
