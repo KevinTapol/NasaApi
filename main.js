@@ -2,15 +2,17 @@ document.querySelector('button').addEventListener('click', getFetch)
 require('dotenv').config()
 // const api_keys = process.env.API_KEY
 
+//Use .env file in config folder
+require("dotenv").config({ path: "./config/.env" });
+
 function getFetch(){
   const choice = document.querySelector('input').value
   
   console.log(choice)
 
   const API_KEY = 'cQefIAyvLIcimT6OaQlIu5MenjqoJsCzFPfJA8AS'
-  // let key = process.env.API_KEY
+  // const key = process.env.API_KEY
   
-
   const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${choice}`
 
   // I used promises instead of async because at the time I didn't know async
