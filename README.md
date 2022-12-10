@@ -13,6 +13,6 @@
         <img height="30" src="https://img.shields.io/static/v1?label=|&message=CLICK_HERE_FOR_WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
       </a>
       </p> <!--Desciption of technologies and functionality of Nasa API-->
-        <p><strong>HTML, CSS, JS, Node.js, dotenv, Git/Github, Nasa API</strong> - Fetch Historical Nasa API by Day</p>
+        <p align="center"><strong>HTML, CSS, JS, Node.js, dotenv, Git/Github, Nasa API</strong> - Fetch Historical Nasa API by Day</p>
     </td> <!--End of Nasa API-->    
   </tr> <!--End of table row of Portfolio and Nasa API-->
