@@ -1,19 +1,21 @@
 document.querySelector('button').addEventListener('click', getFetch)
 require('dotenv').config()
-// const api_keys = process.env.API_KEY
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
 
 function getFetch(){
   const choice = document.querySelector('input').value
-  
+  // user input of drop down calender does not come back in string format ex for 12/17/2022 date=2022-12-17
+  // if I wanted to change the way the user inputs like a form tag then I would reassemble the inputs into the choice format of YYYY-MM-DD Month = December Day = 17 Year = 2022 then create an object key value pair of months with input month.toLowerCase() key with the value of number respresentation ex user types in December i add .toLowerCase() to that field {'december':12}and reassemble the user input year-month-day and set it equal to choice
   console.log(choice)
-
-  const API_KEY = 'cQefIAyvLIcimT6OaQlIu5MenjqoJsCzFPfJA8AS'
-  // const key = process.env.API_KEY
   
+  
+  //const key = process.env.API_KEY
+  const API_KEY = 'cQefIAyvLIcimT6OaQlIu5MenjqoJsCzFPfJA8AS'
+
   const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${choice}`
+ 
 
   // I used promises instead of async because at the time I didn't know async
   fetch(url)

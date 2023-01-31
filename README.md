@@ -4,7 +4,7 @@
       <h3 align="center">Nasa Picture of the Day</h3>
       <br /> <!--Click Nasa Api image to open a new window to Nasa API website-->
       <a target="_blank" href="https://kevintapol.github.io/NasaApi/index.html">
-        <img src="./images/nasaApi.png" width="100%"  alt="#"/>
+        <img src="./images/NasaApi.gif" width="100%"  alt="#"/>
       </a>
       <br />
       <p align="center"> 
